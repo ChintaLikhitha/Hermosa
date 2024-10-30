@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Listings</title>
+    <style>
+        /* CSS for styling the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .hotel-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .hotel {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            margin: 15px;
+            text-align: center;
+        }
+
+        .hotel img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .hotel h2 {
+            color: #333;
+        }
+
+        .hotel p {
+            padding: 0 10px;
+            color: #555;
+        }
+
+        .hotel a {
+            display: block;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .book-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .book-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore Our Hotels</h1>
+    <p>Find the best place to stay for your next adventure</p>
+</header>
+
+<div class="hotel-container">
+
+    <!-- Hotel 1 -->
+    <div class="hotel">
+        <img src="https://www.ihcltata.com/content/dam/luxury/hotels/Taj_Lands_End_Mumbai/images/4x3/R&S_WOGLI_Exterior-Master.jpg" alt="Hotel 1">
+        <h2>Hotel Sunshine</h2>
+        <p>Located in the heart of the city, offering luxurious rooms and a stunning rooftop view.</p>
+        <a href="https://www.example.com/hotel-sunshine" target="_blank">Learn More</a>
+        <button class="book-button" onclick="bookHotel('Hotel Sunshine')">Book Now</button>
+    </div>
+
+    <!-- Hotel 2 -->
+    <div class="hotel">
+        <img src="https://assets.cntraveller.in/photos/65169715f1f1534fc4e0f24d/4:3/w_1640,h_1230,c_limit/W%20Goa.jpg" alt="Hotel 2">
+        <h2>Coastal Paradise Resort</h2>
+        <p>A beachside resort perfect for a family getaway or a romantic retreat.</p>
+        <a href="https://www.example.com/coastal-paradise" target="_blank">Learn More</a>
+        <button class="book-button" onclick="bookHotel('Coastal Paradise Resort')">Book Now</button>
+    </div>
+
+    <!-- Hotel 3 -->
+    <div class="hotel">
+        <img src="https://curlytales.com/wp-content/uploads/2022/02/auli-2.jpg" alt="Hotel 3">
+        <h2>Mountain Escape</h2>
+        <p>Escape to the mountains and enjoy nature at this peaceful retreat.</p>
+        <a href="https://www.example.com/mountain-escape" target="_blank">Learn More</a>
+        <button class="book-button" onclick="bookHotel('Mountain Escape')">Book Now</button>
+    </div>
+
+</div>
+
+<script>
+    // JavaScript function to show alert message on button click
+    function bookHotel(hotelName) {
+        alert("Thank you for choosing " + hotelName + "! Your booking has been initiated.");
+    }
+</script>
+
+</body>
+</html>
